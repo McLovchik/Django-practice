@@ -1,0 +1,30 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Записи
+{% endblock %}
+
+
+{% block content %}
+    <h3>Записи</h3>
+    {% if records_list %}
+        <ul>
+            {% for record in records_list %}
+                    <li>
+                        <p><a href="{% url 'record-detail' record.id %}">{{ record }}</a></p>
+                        <p>Автор - {{ record.author }}</p>
+                        <p>Дата создания - {{ record.created_at|date:'d.m.Y.' }}</p>
+                    </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>
+            Записей нет.
+        </p>
+    {% endif %}
+    <hr>
+    <a href="{% url 'create-record' %}">Создать запись</a>
+    <br>
+    <a href="{% url 'create-csv' %}">Создать запись загрузкой файла (без изображений)</a>
+
+{% endblock %}

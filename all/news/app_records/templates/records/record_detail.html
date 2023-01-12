@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Запись
+{% endblock %}
+
+
+{% block content %}
+    <a href="{% url 'records-list' %}">Вернуться к записям</a>
+    <hr>
+    <p>{{ record.text }}</p>
+    {% if images %}
+        {% for image in images %}
+            <img style="width: 200px; height: 150px" src="{{ image.image.url }}"/>
+        {% endfor %}
+    {% endif %}
+    <hr>
+    <p>Автор - {{ record.author }}</p>
+    <p>Дата создания - {{ record.created_at|date:'d.m.Y.' }}</p>
+{% endblock %}

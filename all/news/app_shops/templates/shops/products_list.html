@@ -1,0 +1,57 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Товары
+{% endblock %}
+
+
+{% block content %}
+    <style>
+        table {
+            border: 1px solid #d703ff;
+            border-spacing: 2px;
+        }
+
+        td, th{
+            border: solid 1px #b75212;
+            padding: 2px 4px;
+        }
+        .collapsed{
+            border-collapse: collapse;
+        }
+        .separated{
+            border-collapse: separate;
+        }
+    </style>
+    <h3>Товары</h3>
+    {% if products_list %}
+
+        <table class="collapsed">
+            <tbody>
+                <tr>
+                    <td style="border-color: #447e9b; border-width: 2px">Товар</td>
+                    <td style="border-color: #447e9b; border-width: 2px">Магазин(ы)</td>
+                </tr>
+                {% for item in shops %}
+                    <tr>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.shops|join:", " }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    {% else %}
+        <p>Товаров нет</p>
+    {% endif %}
+
+    <h3>Наиболее продаваемый товар</h3>
+    {% if bestseller %}
+        <p>Id - {{ bestseller.id }}</p>
+        <p>Name - {{ bestseller.name }}</p>
+        <p>Units sold - {{ bestseller.product_quantity }}</p>
+    {% else %}
+        <p>Продаж нет</p>
+    {% endif %}
+
+{% endblock %}

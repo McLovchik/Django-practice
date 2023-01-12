@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Создание новости
+{% endblock %}
+
+
+{% block content %}
+    <a href="{% url 'new-list-url' %}">К новостям</a>
+    <h3>Создание новости</h3>
+    <form method="post" action="{% url 'news-create' %}">
+        {% csrf_token %}
+        {{ news_form.as_p }}
+        <button type="submit">Опубликовать</button>
+    </form>
+{% endblock %}

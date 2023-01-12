@@ -1,0 +1,38 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Пользователи
+{% endblock %}
+
+
+{% block content %}
+    {% load auth_extras %}
+    <h3>Пользователи</h3>
+    {% if users_list %}
+        <ul>
+            {% for user in users_list %}
+                {% if not user.is_superuser %}
+                    <li>
+                        <h4>
+                            {{ user.username }}
+                        </h4>
+                        <p>Имя - {{ user.first_name }}. Фамилия - {{ user.last_name }}</p>
+                        <p>Город - {{ user.profile.city }}. Телефон - {{ user.profile.phone }}</p>
+                        <p>Количество опубликованных новостей: {{user.profile.count_news }}</p>
+                        <p>
+                            Верификация:
+                            {% if user|has_group:"Верифицированные пользователи" %}
+                                верифицирован
+                            {% else %}
+                                не верифицирован
+                                <p><a href="{% url 'verification-user' user.id %}">Верифицировать</a></p>
+                            {% endif %}
+                        </p>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Пользователей нет</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,377 @@
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Session data corrupted
+Watching for file changes with StatReloader
+2022-12-20 16:10:57.260112 ������������ Misha ������� ����� (������� Honor 10) � �������
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shops/personal_cabinet/5/replenish_balance/
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py", line 70, in post
+    f'replenished the balance {self.object.balance}.'
+AttributeError: 'ReplenishTheBalanceView' object has no attribute 'object'
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+2022-12-20 16:15:59.682359 User Misha replenished the balance on 200.
+2022-12-20 16:16:44.694421 User Misha authenticated.
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-12-20 16:17:32.038297 User Misha added product (��������� ������) in basket.
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-12-20 16:18:15.491794 User Misha added product (������) in basket.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+2022-12-20 16:21:38.050466 User Misha added product (Ноутбук Acer) in basket.
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py changed, reloading.
+Watching for file changes with StatReloader
+2022-12-20 16:35:29.191866 Пользователь Gosha пополнил баланс на 1500.
+2022-12-20 16:35:42.549140 Пользователь Gosha добавил продукт (Джерси Lebron) в корзину.
+2022-12-20 16:35:56.488195 Пользователь Gosha пополнил баланс на 8000.
+2022-12-20 16:35:59.936197 Покупка от пользователя Gosha на сумму 6000
+Internal Server Error: /shops/personal_cabinet/6/
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'PersonalCabinet' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Python39\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Python39\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python39\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Python39\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py", line 46, in status
+    logger.info(f'Пользователь {self.profile.user.name} перешел на статус - Gold')
+AttributeError: 'User' object has no attribute 'name'
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shops/personal_cabinet/6/
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'PersonalCabinet' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Python39\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Python39\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python39\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Python39\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py", line 46, in status
+    logger.info(f'Пользователь {self.profile.profile.user.name} перешел на статус - Gold')
+AttributeError: 'Profile' object has no attribute 'profile'
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shops/personal_cabinet/6/
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'PersonalCabinet' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Python39\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Python39\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python39\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Python39\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py", line 46, in status
+    logger.info(f'Пользователь {self.profile.name} перешел на статус - Gold')
+AttributeError: 'Profile' object has no attribute 'name'
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py changed, reloading.
+Watching for file changes with StatReloader
+Пользователь перешел на статус - Gold
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shops/personal_cabinet/6/
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'PersonalCabinet' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Python39\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Python39\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python39\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Python39\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py", line 46, in status
+    logger.info(f'Пользователь {self.profile.username} перешел на статус - Gold')
+AttributeError: 'Profile' object has no attribute 'username'
+C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_users\models.py changed, reloading.
+Watching for file changes with StatReloader
+Пользователь Gosha перешел на статус - Gold
+2022-12-20 16:40:11.979516 Пользователь Gosha пополнил баланс на 40000.
+Пользователь Gosha перешел на статус - Gold
+2022-12-20 16:40:21.924826 Пользователь Gosha добавил продукт (Баскетбольные шорты Lakers) в корзину.
+2022-12-20 16:40:23.062942 Покупка от пользователя Gosha на сумму 6000
+Пользователь Gosha перешел на статус - Platinum
+Forbidden (Permission denied): /users/
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\contrib\auth\mixins.py", line 108, in dispatch
+    return self.handle_no_permission()
+  File "C:\Python39\lib\site-packages\django\contrib\auth\mixins.py", line 48, in handle_no_permission
+    raise PermissionDenied(self.get_permission_denied_message())
+django.core.exceptions.PermissionDenied
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /accounts/login/
+2022-12-22 17:26:44.143567 Пользователь Aleksandr аутентифицировался.
+2022-12-22 17:28:38.322448 Пользователь Aleksandr добавил продукт (Кроссовки баскетбольные Air Jordan) в корзину.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /shops/1/product_detail/4/
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\McLovchik\PycharmProjects\python_django\05_Forms\news\app_shops\views.py", line 175, in post
+    cart.user = request.user
+  File "C:\Python39\lib\site-packages\django\db\models\fields\related_descriptors.py", line 237, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x000001F523F606D0>>": "Cart.user" must be a "User" instance.
+2023-01-05 05:37:58.987307 Пользователь Aleksandr аутентифицировался.
+2023-01-05 05:38:05.003708 Пользователь Aleksandr добавил продукт (Кроссовки зимние) в корзину.

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список объектов</title>
+</head>
+<h2>Список объектов на продажу</h2>
+<body>
+    {% if real_estate_list %}
+    <ul>
+        {% for object in real_estate_list %}
+        <li>
+            <strong>{{ object.title }}</strong>
+            <p>Описание: {{ object.description }}</p>
+            <p>Тип жилья: {{ object.type.name }}</p>
+            <p>Количество комнат: {{ object.rooms_number.quantity }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <p>Объекты на продажу отсутствуют.</p>
+    {% endif %}
+</body>
+</html>

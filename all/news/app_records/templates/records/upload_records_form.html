@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Загрузка файла с записями
+{% endblock %}
+
+
+{% block content %}
+    <a href="{% url 'records-list' %}">Вернуться к записям</a>
+    <h3>Загрузка файла с записями</h3>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Загрузить</button>
+    </form>
+{% endblock %}

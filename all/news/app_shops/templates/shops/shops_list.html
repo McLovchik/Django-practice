@@ -1,0 +1,25 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Магазины
+{% endblock %}
+
+
+{% block content %}
+    {% load cache %}
+    {% if user_is_auth %}
+        <h3><a href="{% url 'personal-cabinet' user.id %}">Личный кабинет</a></h3>
+    {% endif %}
+    <h3>Магазины</h3>
+    {% if shops_list %}
+        <ul>
+            {% cache 10 shops_list %}
+                {% for shop in shops_list %}
+                    <li><a href="{% url 'shop-detail' shop.id %}">{{ shop.name }}</a></li>
+                {% endfor %}
+            {% endcache %}
+        </ul>
+    {% else %}
+        <p>Магазинов нет</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    News and comments
+{% endblock %}
+
+
+{% block content %}
+    <a href="{% url 'new-list-url' %}">Вернуться к новостям</a>
+    <h4>{{ one_news.name }}</h4>
+    <p>"{{ one_news.content }}"</p>
+    <p>Автор - {{ one_news.news_author }}</p>
+    <a href="{% url 'news-edit' one_news.id %}">Редактировать</a>
+    <hr>
+    <h5>Комментарии</h5>
+    <ul>
+        {% for comment in one_news.comments.all %}
+        <li>
+            {% if comment.author %}
+                <p>Автор - {{ comment.author.username }}</p>
+            {% else %}
+                <p>Автор - {{ comment.user_name }} (Аноним)</p>
+            {% endif %}
+            <p>Комментарий: {{ comment.comment_text }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h5>Добавить коммантарий</h5>
+    <form method="post" action="/news/{{ one_news.id }}/">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Добавить</button>
+    </form>
+{% endblock %}

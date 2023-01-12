@@ -1,0 +1,44 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Личный кабинет
+{% endblock %}
+
+
+{% block content %}
+
+    <h3>Личный кабинет ({{ user.username }})</h3>
+    <hr style="border-color: #9d0b9b">
+    <p>Ваш баланс:
+        {% if user.profile.personalcabinet.balance == 0 %}
+            Нема денег(
+        {% else %}
+            {{ user.profile.personalcabinet.balance }}
+        {% endif %}
+        (<a href="{% url 'replenish-balance' user.id %}">Пополнить</a>)
+    </p>
+    <p>Статус: {{ user.profile.personalcabinet.status }}</p>
+    <hr>
+    <p>Наше <b>предложение</b> для вас</b>: {{ user.profile.personalcabinet.offer }}</p>
+    <hr>
+
+    <h4>Акции</h4>
+    {% if promotions %}
+        <ul>
+            {% for promotion in promotions %}
+                <li>{{ promotion.name }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Акций нет</p>
+    {% endif %}
+
+    <hr>
+
+    <h4>Личный кабинет программы лояльности</h4>
+    {% if user.profile.personalcabinet.loyalty_program_item %}
+        <p>{{ user.profile.personalcabinet.loyalty_program_item }}</p>
+    {% else %}
+        <p>Нема пока</p>
+    {% endif %}
+{% endblock %}

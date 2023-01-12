@@ -1,0 +1,42 @@
+[
+  {
+    "model": "app_housing.housingtype",
+    "pk": 1,
+    "fields": {
+      "name": "Квартира",
+      "code": "flat"
+    }
+  },
+  {
+    "model": "app_housing.housingtype",
+    "pk": 2,
+    "fields": {
+      "name": "Дом",
+      "code": "house"
+    }
+  },
+  {
+    "model": "app_housing.housingtype",
+    "pk": 3,
+    "fields": {
+      "name": "Апартаменты",
+      "code": "apartment"
+    }
+  },
+  {
+    "model": "app_housing.housingtype",
+    "pk": 4,
+    "fields": {
+      "name": "Комната",
+      "code": "room"
+    }
+  },
+  {
+    "model": "app_housing.housingtype",
+    "pk": 5,
+    "fields": {
+      "name": "Коттедж",
+      "code": "cottage"
+    }
+  }
+]

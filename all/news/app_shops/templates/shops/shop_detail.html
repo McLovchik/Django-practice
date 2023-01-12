@@ -1,0 +1,49 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+
+{% endblock %}
+
+
+{% block content %}
+
+    <style>
+        table {
+            border: 1px solid #d703ff;
+            border-spacing: 2px;
+        }
+
+        td, th{
+            border: solid 1px #b75212;
+            padding: 2px 4px;
+        }
+        .collapsed{
+            border-collapse: collapse;
+        }
+        .separated{
+            border-collapse: separate;
+        }
+    </style>
+
+    <h3>{{ shop.name }}</h3>
+
+    {% if shop_items %}
+        <table class="collapsed" border="1">
+            <tbody>
+                <tr>
+                    <td style="border-color: #447e9b; border-width: 2px">Товар</td>
+                    <td style="border-color: #447e9b; border-width: 2px">Количество</td>
+                </tr>
+                {% for item in shop_items %}
+                    <tr>
+                        <td><a href="/shops/{{ shop.id }}/product_detail/{{ item.product.id }}/">{{ item.product.name }}</a></td>
+                        <td>{{ item.quantity }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br>
+    {% else %}
+        <p>Товаров нет</p>
+    {% endif %}
+{% endblock %}

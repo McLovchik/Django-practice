@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Пополнение баланса
+{% endblock %}
+
+
+{% block content %}
+    <a href="{% url 'personal-cabinet' user_id %}">Назад</a>
+    <h3>Пополнение баланса</h3>
+    <p>Текущий баланс: {{ request.user.profile.personalcabinet.balance }}</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ replenish_balance_form.as_p }}
+        <button type="submit">Отравить</button>
+    </form>
+{% endblock %}

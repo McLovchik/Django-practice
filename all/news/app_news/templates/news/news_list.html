@@ -1,0 +1,44 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Новости
+{% endblock %}
+
+
+{% block content %}
+    {% load auth_extras %}
+    <h3>Новости</h3>
+    {% if news_list %}
+        <ul>
+            {% for news in news_list %}
+                {% if news.active == 1 %}
+                    <li>
+                        <h5>
+                            <a href="{% url 'news-comments-page' news.id %}">{{ news.name }}</a>
+                        </h5>
+                        <p>{{ news.content }}</p>
+                        <p>Автор - {{ news.news_author }}</p>
+                        <p>Дата создания - {{ news.created_at|date:'d.m.Y.' }}</p>
+                        <p>Дата обновления - {{ news.updated_at|date:'d.m.Y.' }}</p>
+                        <p>Тэг - <a href="{% url 'news-with-tag' news.tag %}">{{ news.tag }}</a></p>
+                    </li>
+                {% else %}
+                    {% if request.user.is_superuser or request.user|has_group:"Модераторы" %}
+                        <li>
+                            <p>Новость "{{ news.name }}" - неактивна.</p>
+                            <p>Автор - {{ news.news_author }}</p>
+                            <p>Дата создания - {{ news.created_at|date:'d.m.Y.' }}</p>
+                            <p><a href="{% url 'activate-news' news.id %}">Активировать</a></p>
+                        </li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>
+            Новостей нет.
+        </p>
+    {% endif %}
+    <a href="{% url 'news-create' %}">Создать новость</a>
+
+{% endblock %}

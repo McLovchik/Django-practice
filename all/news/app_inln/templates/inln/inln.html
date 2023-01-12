@@ -1,0 +1,36 @@
+{% extends 'base/base.html' %}
+{% load i18n %}
+
+{% block title %}
+    i18n and L10n
+{% endblock %}
+
+
+{% block content %}
+    <section style="box-shadow: 14px 0 10px rgb(31 197 197 / 60%)">
+        <p style="padding: 15px; box-shadow: 14px 0 10px rgb(125 143 91 / 60%)">{% trans "Hello everyone" %}</p>
+
+        <div style="padding: 5px 15px; box-shadow: 14px 0 10px rgb(125 143 91 / 60%)">
+            <p style="color: #b700b5">{% trans "What time is it?" %}</p>
+            <p>{{ time_message }}</p>
+        </div>
+
+        <hr>
+
+        <div style="padding: 15px">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_language_info for LANGUAGE_CODE as lang %}
+            Language_code: {{ lang.code }}<br>
+            Name of language: {{ lang.name_local }}<br>
+            Name in english: {{ lang.name }}<br>
+            Bi-directional: {{ lang.bidi }}<br>
+            Name in the active language: {{ lang.name_translated }}
+        </div>
+        <div style="padding: 15px">
+            {% language 'en' %}
+                Current language {{ lang }}
+                <p>{% trans "Welcome to our page" %}</p>
+            {% endlanguage %}
+        </div>
+    </section>
+{% endblock %}

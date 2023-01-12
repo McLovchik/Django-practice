@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Создание записи
+{% endblock %}
+
+
+{% block content %}
+    <a href="{% url 'records-list' %}">К записям</a>
+    <h3>Создание записи блога</h3>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ record_form.as_p }}
+        {{ image_form.as_p }}
+        <button type="submit">Опубликовать</button>
+    </form>
+{% endblock %}

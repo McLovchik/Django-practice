@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body style="margin: 0;">
+{% load i18n %}
+    <header style="box-shadow: inset 0 0 14px 4px rgb(0 0 0 / 40%); padding: 15px">
+        {% if request.user.is_authenticated %}
+            <h3 style="margin: 0; padding: 4px 0">Привет, {{ request.user.username }}</h3>
+            {% if not request.user.is_superuser %}
+                <div><a href="{% url 'profile-page' request.user.id %}">Профиль</a></div>
+            {% endif %}
+            <a href="{% url 'logout' %}">Выйти</a>
+        {% else %}
+            <a href="{% url 'login' %}">Войти</a>
+            <p><a href="{% url 'register' %}">Зарегистрироваться</a></p>
+        {% endif %}
+        <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input name="text" type="hidden" value="{{ redirect_to }}">
+            <select name="language">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected {% endif %}>
+                        {{ language.name_local }} ({{ language.code }})
+                    </option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Go">
+        </form>
+    </header>
+
+    <section style="box-shadow: -14px 0 11px 10px rgb(125 143 91 / 60%); padding: 15px">
+        <a href="{% url 'new-list-url' %}">Новости</a>
+        <a href="{% url 'users-list' %}">Пользователи</a>
+        <a href="{% url 'records-list' %}">Записи</a>
+        <a href="{% url 'inln-page' %}">i18nL10n</a>
+        <hr>
+        <a href="{% url 'shops-list' %}">Магазины</a>
+        <a href="{% url 'products-list' %}">Товары</a>
+        <a href="{% url 'cart' %}">Корзина</a>
+    </section>
+
+    <main style="box-shadow: inset 0 0 14px 4px rgb(0 0 0 / 40%); padding: 15px">
+        {% block content %}
+
+        {% endblock %}
+    </main>
+
+</body>
+</html>

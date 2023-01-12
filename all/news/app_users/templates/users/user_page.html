@@ -1,0 +1,22 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Профиль
+{% endblock %}
+
+
+{% block content %}
+    <h3>Данные профиля</h3>
+    <p>Никнейм: {{ user.username }}</p>
+    <p>Имя: {{ user.first_name }}</p>
+    <p>Фамилия: {{ user.last_name }}</p>
+    <p>Город: {{ user.profile.city }}</p>
+    <p>Номер: {{ user.profile.phone }}</p>
+    <hr>
+<!--    {% if user.profile.loyalty_program_item %}-->
+<!--        <h4>Вы участвуете в программе лояльности</h4>-->
+<!--        <p>Ваш бонус: {{ user.profile.loyalty_program_item.name }} !</p>-->
+<!--        <hr>-->
+<!--    {% endif %}-->
+    <p><a href="{% url 'profile-edit' user.id %}">Редактировать</a></p>
+{% endblock %}

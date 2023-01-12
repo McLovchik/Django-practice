@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-13 09:00+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\app_goods\apps.py:7 .\app_goods\models.py:10
+msgid "goods"
+msgstr "товары"
+
+#: .\app_goods\models.py:6
+msgid "article"
+msgstr "артикул"
+
+#: .\app_goods\models.py:7
+msgid "price"
+msgstr "цена"
+
+#: .\app_goods\models.py:14 .\app_goods\models.py:25 .\app_goods\models.py:36
+#: .\app_news\models.py:7 .\app_shops\models.py:6
+msgid "name"
+msgstr "название"
+
+#: .\app_goods\models.py:20
+msgid "loyalty programs"
+msgstr "программы лояльности"
+
+#: .\app_goods\models.py:21
+msgid "loyalty program"
+msgstr "программа лояльности"
+
+#: .\app_goods\models.py:31
+msgid "promotions"
+msgstr "акции"
+
+#: .\app_goods\models.py:32
+msgid "promotion"
+msgstr "акция"
+
+#: .\app_goods\models.py:42
+msgid "offers"
+msgstr "предложения"
+
+#: .\app_goods\models.py:43 .\app_users\models.py:28
+msgid "offer"
+msgstr "предложение"
+
+#: .\app_inln\templates\inln\inln.html:11
+msgid "Hello everyone"
+msgstr "Всем хаюшки"
+
+#: .\app_inln\templates\inln\inln.html:14
+msgid "What time is it?"
+msgstr "Который час?"
+
+#: .\app_inln\templates\inln\inln.html:32
+msgid "Welcome to our page"
+msgstr "Добро пожаловать на нашу страницу"
+
+#: .\app_inln\views.py:8
+#, python-format
+msgid "Today is %(date)s %(time)s"
+msgstr "Сегодня %(date)s %(time)s"
+
+#: .\app_media\apps.py:7
+msgid "media"
+msgstr "медиа"
+
+#: .\app_media\models.py:11
+msgid "files"
+msgstr "файлы"
+
+#: .\app_media\models.py:12
+msgid "file"
+msgstr "файл"
+
+#: .\app_news\apps.py:7 .\app_news\models.py:21
+msgid "news"
+msgstr "новости"
+
+#: .\app_news\models.py:8
+msgid "content"
+msgstr "контент"
+
+#: .\app_news\models.py:9 .\app_records\models.py:9
+msgid "date create"
+msgstr "дата создания"
+
+#: .\app_news\models.py:10
+msgid "date update"
+msgstr "дата обновления"
+
+#: .\app_news\models.py:11
+msgid "active flag"
+msgstr "флаг активности"
+
+#: .\app_news\models.py:12 .\app_records\models.py:7
+msgid "author"
+msgstr "автор"
+
+#: .\app_news\models.py:13
+msgid "tag"
+msgstr "тэг"
+
+#: .\app_news\models.py:40
+msgid "comments"
+msgstr "комментарии"
+
+#: .\app_news\models.py:41
+msgid "comment"
+msgstr "комментарий"
+
+#: .\app_records\apps.py:7 .\app_records\models.py:16
+msgid "records"
+msgstr "записи"
+
+#: .\app_records\models.py:10
+msgid "text"
+msgstr "текст"
+
+#: .\app_records\models.py:17
+msgid "record"
+msgstr "запись"
+
+#: .\app_shops\apps.py:7 .\app_shops\models.py:9
+msgid "shops"
+msgstr "магазины"
+
+#: .\app_shops\models.py:10
+msgid "shop"
+msgstr "магазин"
+
+#: .\app_users\apps.py:7
+msgid "users"
+msgstr "пользователи"
+
+#: .\app_users\models.py:9
+msgid "city"
+msgstr "город"
+
+#: .\app_users\models.py:10
+msgid "phone"
+msgstr "номер телефона"
+
+#: .\app_users\models.py:12
+msgid "count public news"
+msgstr "количество опубликованных новостей"
+
+#: .\app_users\models.py:19
+msgid "profiles"
+msgstr "профили"
+
+#: .\app_users\models.py:20
+msgid "profile"
+msgstr "профиль"
+
+#: .\app_users\models.py:25
+msgid "balance"
+msgstr "баланс"
+
+#: .\app_users\models.py:30
+msgid "loyalty program item"
+msgstr "программа лояльности"
+
+#: .\app_users\models.py:33
+msgid "personal cabinets"
+msgstr "личные кабинеты"
+
+#: .\app_users\models.py:34
+msgid "personal cabinet"
+msgstr "личный кабинет"

@@ -1,0 +1,25 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Корзина
+{% endblock %}
+
+
+{% block content %}
+    <h3>Корзина</h3>
+    {% if cart_cost %}
+        <ul>
+            {% for cart in cart_list %}
+                <li>{{ cart.product.name }} - {{ cart.quantity }} штук(а). Цена: {{ cart.total_cost }}</li>
+            {% endfor %}
+        </ul>
+        <p>Общая цена: {{ cart_cost }}</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" name="pay" value="pay">Оплатить</button>
+            <button type="submit" name="refuse" value="refuse">Очистить</button>
+        </form>
+    {% else %}
+        <p>Пусто</p>
+    {% endif %}
+{% endblock %}
